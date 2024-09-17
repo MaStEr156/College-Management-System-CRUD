@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Studying\\ITI\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj": {}
+    "F:\\Studying\\ITI\\College-Management-System\\College-Management-System-CRUD-\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj": {}
   },
   "projects": {
-    "F:\\Studying\\ITI\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj": {
+    "F:\\Studying\\ITI\\College-Management-System\\College-Management-System-CRUD-\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Studying\\ITI\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj",
+        "projectUniqueName": "F:\\Studying\\ITI\\College-Management-System\\College-Management-System-CRUD-\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj",
         "projectName": "MVC_Session_1",
-        "projectPath": "F:\\Studying\\ITI\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj",
+        "projectPath": "F:\\Studying\\ITI\\College-Management-System\\College-Management-System-CRUD-\\MVC_Session_1\\MVC_Session_1\\MVC_Session_1.csproj",
         "packagesPath": "C:\\Users\\MaStEr\\.nuget\\packages\\",
-        "outputPath": "F:\\Studying\\ITI\\MVC_Session_1\\MVC_Session_1\\obj\\",
+        "outputPath": "F:\\Studying\\ITI\\College-Management-System\\College-Management-System-CRUD-\\MVC_Session_1\\MVC_Session_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MaStEr\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,9 +1,8 @@
 ﻿@model Course
 @{
-    ViewBag.Title = "update";
+    ViewBag.Title = "Update";
     SelectList deptsList = new SelectList(ViewBag.depts, "DeptId", "DeptName");
 }
-
 
 <form asp-action="Update" method="post">
     <input type="hidden" asp-for="CourseId" />
@@ -18,7 +17,7 @@
     <select asp-for="DeptNo" asp-items="deptsList">
     </select>
     <br /> <br />
-    <input type="submit" value="update" class="btn btn-success" />
+    <input type="submit" value="Update" class="btn btn-success" />
     <br />
     <br />
     <a asp-action="index" class="btn btn-info"> Go Back </a>
