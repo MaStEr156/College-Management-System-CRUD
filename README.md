@@ -44,7 +44,7 @@ Each controller has a set of views for interacting with the user, including form
 5. Run the project using Visual Studio. The application will launch in your default web browser.
 
 ## Database Setup
-1. The project uses **Entity Framework Code First**. To create the database, after adjusting the server name in the connection string in "appsettings.json" file, run the following command in the **Package Manager Console**:
+1. The project uses **Entity Framework Code First**. To create the database, run the following command in the **Package Manager Console**:
     ```bash
     Update-Database
     ```
