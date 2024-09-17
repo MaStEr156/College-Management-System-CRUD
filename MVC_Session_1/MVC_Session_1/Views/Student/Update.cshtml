@@ -1,0 +1,33 @@
+﻿@model Student
+@{
+    ViewBag.Title = "Update";
+    SelectList deptsList = new SelectList(ViewBag.depts, "DeptId", "DeptName");
+}
+
+
+    <form asp-action="Update" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <label asp-for="Name">Name</label> <br />
+        <input asp-for="Name" /><span asp-validation-for="Name"></span> <br /> <br />
+
+        <label asp-for="Age">Age</label><br />
+        <input asp-for="Age" /><span asp-validation-for="Age"></span> <br /> <br />
+
+        <label asp-for="Email">Email</label> <br />
+        <input asp-for="Email" /> <span asp-validation-for="Email"></span> <br /> <br />
+
+        <label asp-for="DeptId">Department</label>&nbsp;&nbsp;&nbsp;
+        <select asp-for="DeptId" asp-items="deptsList">
+            @* @foreach(var item in ViewBag.depts)
+            {
+            <option value="@item.DeptId">@item.DeptName</option>
+            } *@
+        </select>
+        <br /> <br />
+        <input type="submit" value="update" class="btn btn-success" />
+        <br />
+        <br />
+        <a asp-action="index" class="btn btn-info"> Go Back </a>
+
+    </form>

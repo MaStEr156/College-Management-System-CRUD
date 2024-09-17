@@ -1,0 +1,27 @@
+﻿@model Course
+@{
+    ViewBag.Title = "update";
+    SelectList deptsList = new SelectList(ViewBag.depts, "DeptId", "DeptName");
+}
+
+
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="CourseId" />
+
+    <label asp-for="CourseName">Name</label> <br />
+    <input asp-for="CourseName" /><span asp-validation-for="CourseName"></span> <br /> <br />
+
+    <label asp-for="Duration">Age</label><br />
+    <input asp-for="Duration" /><span asp-validation-for="Duration"></span> <br /> <br />
+
+    <label asp-for="DeptNo">Department</label>&nbsp;&nbsp;
+    <select asp-for="DeptNo" asp-items="deptsList">
+    </select>
+    <br /> <br />
+    <input type="submit" value="update" class="btn btn-success" />
+    <br />
+    <br />
+    <a asp-action="index" class="btn btn-info"> Go Back </a>
+
+</form>
+

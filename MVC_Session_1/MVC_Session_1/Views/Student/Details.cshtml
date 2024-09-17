@@ -1,0 +1,18 @@
+﻿@model Student
+@{
+    ViewBag.Title = "Student Details";
+}
+
+    <h1>
+        Student Details
+    </h1>
+    <div class="alert alert-danger">
+
+    <label style="font-size:15px">Name: </label><h5>@Model.Name</h5>
+    <label style="font-size:15px">Age: </label><h5>@Model.Age</h5>
+    <label style="font-size:15px">Email: </label><h5>@Model.Email</h5>
+    <label style="font-size:15px">Department: </label><h5>@Model.Department.DeptName</h5>
+
+    </div>
+    <br />
+<a asp-action="index" class="btn btn-info"> Go Back </a>

@@ -1,0 +1,13 @@
+﻿@model Student
+@{
+    ViewBag.Title = "Delete";
+}
+
+    <h2 class="alert alert-danger">Are You Sure You Want To Delete This Student? "@Model.Name"</h2>
+    <br />
+    <form asp-action="DeleteConfirm" method="post">
+        <br />
+        <a asp-action="DeleteConfirm" asp-controller="Student" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+    </form>
+    <br />
+    <a asp-action="index" class="btn btn-info"> Go Back </a>

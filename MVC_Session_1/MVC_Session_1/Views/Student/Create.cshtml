@@ -1,0 +1,29 @@
+﻿@model Student
+@{
+    SelectList departments = new SelectList(ViewBag.depts, "DeptId", "DeptName");
+    ViewBag.Title = "Create";
+}
+
+    <form action="/student/create" method="post">
+        @* <div asp-validation-summary="All"></div>  *@
+        <label asp-for="Name">Name</label> <br />
+        <input asp-for="Name" /> <span asp-validation-for="Name"></span> <br />
+
+        <label asp-for="Age">Age</label> <br />
+        <input asp-for="Age" /> <span asp-validation-for="Age"></span> <br />
+
+        <label asp-for="Email">Email</label> <br />
+        <input asp-for="Email" /> <span asp-validation-for="Email"></span> <br />
+
+        <label asp-for="DeptId">Department Number</label><br />
+        <select asp-for="DeptId" asp-items="departments">
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Add" class="btn btn-success" />
+        <br />
+        <br />
+        <a asp-action="index" class="btn btn-info"> Go Back </a>
+
+
+    </form>

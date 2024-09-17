@@ -1,0 +1,15 @@
+﻿@model Department
+@{
+    ViewBag.Title = "Delete";
+}
+
+    <h1 class="alert alert-danger">
+        Are You Sure You Wanna Delete "@Model.DeptName"
+    </h1>
+
+    <form asp-action="DeleteConfirm" method="post">
+        <br />
+        <a asp-action="DeleteConfirm" asp-controller="Department" asp-route-id="@Model.DeptId" class="btn btn-danger">Delete</a>
+    </form>
+    <br/>
+    <a class="btn btn-info" asp-action="index"> Go Back </a>

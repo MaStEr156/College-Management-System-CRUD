@@ -1,0 +1,15 @@
+﻿@model Department
+@{
+    ViewBag.Title = "Department";
+}
+
+    <h1>
+        Department Details
+    </h1>
+    <div class="alert alert-danger">
+    <label style="font-size:15px">Department Id: </label><h5>@Model.DeptId</h5>
+    <label style="font-size:15px">Department Name: </label><h5>@Model.DeptName</h5>
+    <label style="font-size:15px">Capacity: </label><h5>@Model.Capacity</h5>
+    </div>
+<br />
+<a asp-action="index" class="btn btn-info"> Go Back </a>

@@ -1,0 +1,18 @@
+﻿@model Department
+@{
+    ViewBag.Title = "Create";
+}
+
+    <form action="/department/create" method="post">
+        <label asp-for="DeptId">ID</label> 
+        <input asp asp-for="DeptId"/> <span asp-validation-for="DeptId"></span> <br />
+        <label asp-for="DeptName ">Department Name</label>  
+        <input asp-for="DeptName" /> <span asp-validation-for="DeptName"></span> <br />
+        <label asp-for="Capacity">Capacity </label>
+        <input asp-for="Capacity" /> <span asp-validation-for="Capacity"></span> <br /> <br />
+        <input type="submit" value="Add" class="btn btn-success" />
+        <br />
+        <br />
+        <a asp-action="index" class="btn btn-info"> Go Back </a>
+
+    </form>

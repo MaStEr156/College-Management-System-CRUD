@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/css/site.css" rel="stylesheet"/>
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title>@ViewBag.Title </title>
+</head>
+<body>
+    <div class="nav-bar">
+        <center>
+        <ul>
+            <li><a class="nav-btn" asp-controller="Department" asp-action="Index"> Departments</a></li>
+            <li><a class="nav-btn" asp-controller="Student" asp-action="Index"> Students</a></li>
+            <li><a class="nav-btn" asp-controller="Course" asp-action="Index"> Courses</a></li>
+        </ul>
+        </center>
+        
+    </div>
+    <div class="page-body">
+        @RenderBody()
+    </div>
+    
+</body>
+</html>
